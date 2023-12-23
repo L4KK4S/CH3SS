@@ -16,7 +16,7 @@ public class Game {
     // *------------ Variables -------------*
     Piece[] whitePieces = new Piece[16];                                                                // We create the white pawns arrays
     Piece[] blackPieces = new Piece[16];                                                                // We create the white pawns arrays
-    Board theBoard;                                                                                  // We create the board
+    Board theBoard;                                                                                     // We create the board
 
 
     // *----------- Constructor ------------*

@@ -27,21 +27,27 @@ public class Piece {
 
             case 'P':
                 type = "Pawn";
+                break;
 
             case 'R':
                 type = "Rook";
+                break;
 
             case 'N':
                 type = "Knight";
+                break;
 
             case 'B':
                 type = "Bishop";
+                break;
 
             case 'Q':
                 type = "Queen";
+                break;
 
             case 'K':
                 type = "King";
+                break;
 
             default:
                 System.out.println("ERROR: The type of the piece is not valid");
@@ -55,30 +61,48 @@ public class Piece {
 
     public String getDisplayName(){
 
+        String displayName;
+
+        if (color == 0){
+            displayName = "\u001B[31m";
+        }else{
+            displayName = "\u001B[34m";
+        }
+
+
         switch (type){
 
             case "Pawn":
-                return "P";
+                displayName += "\u2659";
+                break;
 
             case "Rook":
-                return "R";
+                displayName += "\u2656";
+                break;
 
             case "Knight":
-                return "N";
+                displayName += "\u2658";
+                break;
 
             case "Bishop":
-                return "B";
+                displayName += "\u2657";
+                break;
 
             case "Queen":
-                return "Q";
+                displayName += "\u2655";
+                break;
 
             case "King":
-                return "K";
+                displayName += "\u2654";
+                break;
 
             default:
                 return "";
 
         }
+
+        displayName += "\u001B[0m";
+        return displayName;
 
     }
 

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CH3SS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CH3SS_jar</output-path>
+    <root id="archive" name="CH3SS.jar">
+      <element id="module-output" name="CH3SS" />
+    </root>
+  </artifact>
+</component>
